@@ -20,7 +20,7 @@ public:
 	double procesar(vector<double> entradas_value){
 		double result = 0.0;
 		if(funcion == "relu"){
-			for(int i = 0.0;i < entradas; i++){
+			for(int i = 0;i < entradas; i++){
 				double valor = entradas_value[i] * pesos[i];
 				result += valor;
 			}
@@ -53,7 +53,7 @@ int main(){
 	// double peso_entrenado = neu.entrenar(resultado_final, 3);
 
 	int epocas = 3000;
-	int esperado;
+	double esperado;
 	cout<<"Introduce el resultado esperado de la neurona: \n";cin>>esperado;
 	for(int epoca = 1; epoca <= epocas; epoca++){
 		double resultado_actual = neu.procesar(entrada_mi);
