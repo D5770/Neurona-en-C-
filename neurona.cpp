@@ -67,7 +67,7 @@ int main(){
 	}
 	return 0;
 }
-
+// Aún me falta corregir ciertas cosas y aparte me falta entrenar el peso
 
 
 
